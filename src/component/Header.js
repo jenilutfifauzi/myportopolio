@@ -4,6 +4,7 @@ import { useMediaQuery } from "@chakra-ui/media-query";
 import { Button } from "@chakra-ui/button";
 import { Image } from "@chakra-ui/image";
 import React from "react";
+import profileImg from "../assets/profile1.svg";
 
 function Header() {
   const { colorMode } = useColorMode();
@@ -25,10 +26,11 @@ function Header() {
                     }>Click me</Button>
 
         </Box>
-        <Image alignSelf={"center"} mt={isNotSmallerScreen ? 0 : 12}
-          mb={isNotSmallerScreen ? 0 : 12 } borderRadius="full" 
-          backgroundColor="transparent" boxShadow="lg"
-          boxSize="300px" src="https://avatars.githubusercontent.com/u/61114044?v=4" />
+        <Image alignSelf="center" mt={isNotSmallerScreen ? "0" : "12"}
+                    mb={isNotSmallerScreen ? "0" : "12"} borderRadius='full'
+                    backgroundColor="transparent" boxShadow="lg"
+                    boxSize="300px" src={"https://avatars.githubusercontent.com/u/61114044?v=4"} />
+      
       </Flex>
     </Stack>
   );

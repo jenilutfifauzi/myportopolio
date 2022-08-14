@@ -3,6 +3,7 @@ import { useColorMode } from '@chakra-ui/color-mode';
 import { Flex, VStack, Heading, Spacer } from '@chakra-ui/react';
 import { FaSun, FaMoon, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
 import Header from './component/Header';
+import Profile from './component/Profile';
 import Social from './component/Social';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       </Flex>
       <Header />
       <Social />
+      <Profile />
     </VStack>
   );
 }
